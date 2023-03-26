@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 04</title>
+    <link rel="stylesheet" type="text/css" href="css/960_12 col.css" />
+    <style type="text/css">
+        @font-face {
+            font-family: 'QuicksandBook';
+            src: url ('fonts/Quicksand_Book-webfont.eot');
+            src: url ('fonts/Quicksand_Book-webfont.eot?#iefix') format ('embedded-opentype'),
+
+                url("fonts/Quicksand_Book-webfont.woff") format("woff"),
+                url ('fonts/Quicksand_Book-webfont.ttf') format('truetype'),
+                url("fonts/Quicksand_Book-webfont.svg#QuicksandBook"),
+                format ('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            color: #ffffff;
+            background: url("img/bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 90%;
+            margin: 0px;
+            text-align: center;
+            background-attachment: fixed;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            background-position: center;
+
+
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        .header {
+            background-image: url("img/PEDAL.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 0px 0px 0px 0px;
+            height: 100px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: 50;
+            margin: 0 auto;
+        }
+
+        .nav {
+            float: right;
+            font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+
+            text-align: right;
+        }
+
+        .wrapper {
+            width: 960px;
+            margin: 0px auto;
+            background-image: url ("img/bg-triangle.png");
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            text-align: left;
+        }
+
+        h1,
+        h2 {
+
+            font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 300%;
+            margin-top: 200px;
+        }
+
+        .date {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 75%;
+            color: #ffffff;
+        }
+
+        .intro {
+            clear: left;
+            font-size: 90%;
+            line-height: 1.4em;
+        }
+
+        .main-story {
+            background-image: url ("img/triangles.png");
+            background-repeat: no-repeat;
+            background-position: 122px 142px;
+            height: 570px;
+        }
+
+        .more-articles {
+            border-top: 1px solid #ffffff;
+            padding: 10px;
+        }
+
+        .more-articles p {
+            border-bottom: 1px solid #807c72;
+            padding: 5px 0px 15px 0px;
+            font-size: 80%;
+        }
+
+        .more-articles p:last-child {
+            border-bottom: none;
+        }
+
+        .footer {
+            clear: both;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 5px 10px;
+        }
+
+        .footer p {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 75%;
+            text-align: right;
+        }
+
+        .footer a {
+            color: #807c72;
+        }
+
+        .wrapper {
+
+            background-position: center;
+            max-width: 600px;
+            color: rgb(255, 255, 255);
+            vertical-align: text-top;
+        }
+
+        .wrapper2 {
+            background: rgba(255, 255, 255, 0.089);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(7.4px);
+            background-position: center;
+            max-width: 600px;
+            color: rgb(255, 255, 255);
+            vertical-align: auto;
+        }
+
+        .menu {
+            background: rgba(255, 255, 255, 0.21);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(7.4px);
+            display: flex;
+
+
+
+        }
+
+        .barra {
+            float: left;
+            padding-top: 90px;
+            margin: 100 auto;
+            width: 180px;
+
+        }
+
+        nav>ul {
+            display: flex;
+
+        }
+
+        nav>ul li {
+            list-style: none;
+            margin: 2px 10px;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .introgrid {
+            max-width: 500px;
+            margin: 0 auto;
+            background: rgba(255, 253, 253, 0.397);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(7.4px);
+            color: black;
+            overflow: auto;
+            vertical-align: text-top;
+            text-align: center;
+        }
+
+        .nav.grid_7 {
+            list-style: none;
+            margin: 2px 10px;
+        }
+
+        .grid6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid6 {
+            text-align: center;
+        }
+
+        .grid6 h1 {
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container_12">
+            <div class="grid_5">
+            </div>
+        </div>
+    </div>
+    <div class="barra">
+        <div class="nav grid_7">
+            <section class="menu">
+                <nav>
+                    <center>
+
+                        <big>
+                            <ul>
+                                <li><a href="index.html">INICIO</a></li>
+                                <br><br>
+
+                                <li><a href="act1.html">ACTIVIAD 1</a> </li>
+                                <br><br>
+                                <li><a href="act2.html">ACTIVIDAD 2</a> </li>
+                                <br><br>
+                                <li><a href="act3.html">ACTIVIDAD 3</a> </li>
+                                <br><br>
+                                <li><a href="act4.html">ACTIVIDAD 4</a> </li>
+                            </ul>
+
+                        </big>
+                    </center>
+                </nav>
+            </section>
+        </div>
+    </div>
+
+
+    <center>
+        <div class="wrapper2">
+            <div class="wrapper">
+                <div class="grid6">
+                    <center>
+                        <h1>Solo un cambio</h1>
+                    </center>
+                </div>
+                <div class="main-story container 12">
+                    <center>
+                        <p class="date">16 APRIL 2023</p>
+                    </center>
+                    <div class="introgrid">
+
+                        <p>Las bicicletas veloheld combinan un diseño minimalista
+                            con enorme calidad. La gama de productos veloheld nos deleita con su belleza
+                            y sencillez. Las bicicletas en blanco y negro presentan una corta distancia
+                            entre ejes, una sola marcha y un manillar estrecho... Todo lo que necesitas
+                            para explorar las calles de la ciudad.</p>
+                        <p>
+                            Veloheld es una marca de bicicletas alemana que se ha ganado una gran reputación en el mundo
+                            de
+                            las bicicletas urbanas y de cicloturismo. Desde su fundación en 2011, Veloheld se ha
+                            centrado en
+                            diseñar bicicletas de alta calidad y durabilidad, combinando una estética minimalista y
+                            moderna
+                            con un enfoque en la funcionalidad y la comodidad.La gama de bicicletas Veloheld es amplia y
+                            variada, desde bicicletas urbanas de piñón fijo hasta bicicletas de cicloturismo de alta
+                            gama.
+                            Cada bicicleta es diseñada y construida a mano en Alemania, utilizando los mejores
+                            materiales y
+                            componentes para asegurar la calidad y durabilidad a largo plazo.Una de las bicicletas más
+                            populares de Veloheld es la "IconX", una bicicleta de carretera diseñada para la ciudad. Con
+                            un
+                            marco de aluminio ligero y un diseño de geometría urbana, la IconX ofrece una experiencia de
+                            conducción rápida y ágil, pero también cómoda y estable. Las ruedas de 28 pulgadas con
+                            neumáticos anchos ofrecen una buena tracción y amortiguación en las superficies urbanas
+                            irregulares, mientras que el manillar plano y los frenos de disco hidráulicos aseguran un
+                            control y frenado fiables.Otra bicicleta popular de Veloheld es la "Pinion Urban", una
+                            bicicleta
+                            urbana de piñón fijo que ofrece una experiencia de conducción suave y eficiente. El sistema
+                            de
+                            piñón fijo es conocido por su simplicidad y bajo mantenimiento, y la Pinion Urban está
+                            diseñada
+                            para ofrecer la máxima comodidad y control al conducir en entornos urbanos. El marco de
+                            acero
+                            cromado y el manillar plano de aluminio ofrecen una sensación clásica, mientras que las
+                            ruedas
+                            de 28 pulgadas y los frenos de disco hidráulicos ofrecen una conducción moderna y
+                            segura.Para
+                            los ciclistas de larga distancia, Veloheld ofrece una amplia gama de bicicletas de
+                            cicloturismo
+                            de alta gama, como la "Pilot" y la "Tracker". Estas bicicletas están diseñadas para ofrecer
+                            una
+                            experiencia de conducción cómoda y eficiente en largas distancias, con características como
+                            marcos de acero cromado y geometría relajada, frenos de disco hidráulicos y sistemas de
+                            transmisión de alta calidad.Una de las cosas que hace que Veloheld sea una marca única es su
+                            enfoque en la personalización y la construcción a medida. Los clientes pueden personalizar
+                            su
+                            bicicleta de acuerdo a sus necesidades y preferencias individuales, desde la elección de los
+                            materiales del marco hasta la selección de componentes como los frenos, las ruedas y la
+                            transmisión. Además, Veloheld ofrece la opción de construir una bicicleta completamente a
+                            medida, utilizando las medidas y especificaciones exactas del cliente para crear una
+                            bicicleta
+                            que se adapte perfectamente a su cuerpo y estilo de conducción.
+                        </p>
+                        <p>Para los que quieran crear su propia bicicleta, los
+                            marcos Veloheld están disponibles en tres tamaños y dos colores, y son el
+                            punto de partida perfecto. <a href="https://www.bike24.es/marcas/veloheld/"
+                                target="_blank">Continuar leyendo...</a></p>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br>
+                <div class="more-articles container_12">
+                    <h2 class="grid 12">Mas Articulos</h2>
+                    <div class="grid 3">
+                        <img src="img/more1.jpg" alt="The road ahead" width="220" height="125" />
+
+                        <p><a href="https://www.welovecycling.com/es/2019/02/14/invencion-tandem-ciclista/"
+                                target="_blank">Historia de la marca: Ciclas Tandem - fabricadas a mano </a></p>
+                        <p><a href="https://tuvalum.com/blog/innovaciones-imprescindibles-ciclismo-carretera/"
+                                target="_blank">Marcos Todoterreno: Innovaciones en la fabricación y reparación de
+                                bicicletas</a></p>
+                    </div>
+
+                    <div class="grid 3">
+                        <img src="img/more2.jpg" alt="sketchbook" width="220" height="125" />
+                        <p><a href="doc/diario.pdf" target="_blank">Diario de viaje: Un cuaderno con los mejores
+                                bocetos</a></p>
+                        <p><a href="https://www.semana.com/las-top-10-2024/64954-3/" target="_blank">Las diez novedades
+                                de 2024: Un
+                                vistazo a lo
+                                que está por venir</a></p>
+                    </div>
+                    <div class="grid 3">
+                        <img src="img/more3.jpg" alt="Repair shop sign" width="220" height="125" />
+
+                        <p><a href="https://www.bikingpoint.es/blog/que-sabes-sobre-la-garantia-de-tu-bicicleta/"
+                                target="_blank">Revisión
+                                del producto: No todas las cestas son iguales</a></p>
+                        <p><a href="https://www.mintransporte.gov.co/publicaciones/9519/gobierno-nacional-presenta-guia-para-promover-la-proteccion-de-los-ciclistas-en-las-vias-del-pais/"
+                                target="_blank">Defensa
+                                del carril para bicis: Conozca sus derechos</a></p>
+                    </div>
+
+                    <div class="grid 3">
+                        <img src="img/more4.jpg" alt="Schwinn Spitfire" width="220" height="125" />
+                        <p><a href="https://www.ebay.com/itm/383835874732?_ul=CO/" target="_blank">Salón de la Fama de
+                                la Bicicleta: La Spitfire
+                                de 1958</a></p>
+                    </div>
+                </div>
+        </div>
+        <div class="footer clearfix">
+            <div class="container_12">
+                <p class="grid 12"><a
+                        href="https://www.minsalud.gov.co/Paginas/Desplazamientos-en-bicicleta-una-opcion-saludable-para-movilizarnos.aspx#:~:text=La%20velocidad%20m%C3%A1xima%20en%20las,trasera%20que%20reflecten%20luz%20roja./"target="_blank">Información
+                        Legal</a> | <a href="https://vicidebici.com/politica-de-privacidad/" target="_blank">Politicas
+                        de Privacidad
+                    </a> | <a href="">Copyright Ecopy; Pedal
+                        Faster 2024</a></p>
+            </div>
+        </div>
+        </div>
+    </center>
+</body>
+
+</html>
